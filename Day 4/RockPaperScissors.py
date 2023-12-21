@@ -35,7 +35,9 @@ rps = [rock, paper, scissors]
 print(f"You chose:\n{rps[user_choice]}")
 print(f"Computer chose:\n{rps[computer_choice]}")
 
-if user_choice == 0 and computer_choice == 2:
+if user_choice >= 3 or user_choice < 0:
+    print("You typed an invalid number, you lose!")
+elif user_choice == 0 and computer_choice == 2:
     print("You Win!")
 elif computer_choice > user_choice:
     print("You Lose!")
