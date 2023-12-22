@@ -11,16 +11,13 @@ nr_symbols = int(input(f"How many symbols would you like?\n"))
 password = ""
 
 for i in range(nr_letters):
-    index = random.randint(0,len(letters)-1)
-    password+=letters[index]
+    password+=random.choice(letters)
 
 for i in range(nr_numbers):
-    index = random.randint(0,len(numbers)-1)
-    password+=numbers[index]
+    password+=random.choice(numbers)
 
 for i in range(nr_symbols):
-    index = random.randint(0,len(symbols)-1)
-    password+=symbols[index]
+    password+=random.choice(symbols)
     
 # print(password)
 p = list(password)
